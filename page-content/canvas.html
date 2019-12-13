@@ -1,2 +1,13 @@
-<canvas id="myCanvas" width="200" height="100">
+<canvas id="myCanvas" width="200" height="100" style="background-color: red">
 </canvas>
+
+<script>
+    $('#map').hide();
+var c = document.getElementById("myCanvas");
+var ctx = c.getContext("2d");
+ctx.beginPath();
+ctx.arc(50, 50, 40, 0, 2 * Math.PI);
+    ctx.fillStyle = "blue";
+ctx.fill();
+ctx.stroke();
+</script> 
